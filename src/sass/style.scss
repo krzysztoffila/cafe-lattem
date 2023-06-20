@@ -1,7 +1,33 @@
+/* VARIABLES */
+
+//Fonts
+$poppins: 'Poppins',
+sans-serif;
+$satisfy: 'Satisfy',
+cursive;
+
+//Colors
+// http://paletton.com/#uid=15n0u0kapvz2IRN6aGLfkqAkQli
+$color-primary-0: #DE96AE;
+$color-primary-1: #F6E2E9;
+$color-primary-2: #ECBFCE;
+$color-primary-3: #BB6280;
+$color-primary-4: #963455;
+$color-secondary-0: #FFC1CF;
+$color-secondary-1: #E8FFB7;
+$color-secondary-2: #E2A0FF;
+$color-secondary-3: #C5F5FC;
+$color-secondary-4: #F9CFF2;
+$color-secondary-5: #EFE9E7;
+
+/* GLOBAL */
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
+  font-family: $poppins;
+  background: $color-primary-0;
 }
