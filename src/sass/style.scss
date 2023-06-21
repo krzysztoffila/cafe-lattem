@@ -1,24 +1,24 @@
 /* VARIABLES */
 
 //Fonts
-$poppins: 'Poppins',
+$poppins: "Poppins",
 sans-serif;
-$satisfy: 'Satisfy',
+$satisfy: "Satisfy",
 cursive;
 
 //Colors
 // http://paletton.com/#uid=15n0u0kapvz2IRN6aGLfkqAkQli
-$color-primary-0: #DE96AE;
-$color-primary-1: #F6E2E9;
-$color-primary-2: #ECBFCE;
-$color-primary-3: #BB6280;
+$color-primary-0: #de96ae;
+$color-primary-1: #f6e2e9;
+$color-primary-2: #ecbfce;
+$color-primary-3: #bb6280;
 $color-primary-4: #963455;
-$color-secondary-0: #FFC1CF;
-$color-secondary-1: #E8FFB7;
-$color-secondary-2: #E2A0FF;
-$color-secondary-3: #C5F5FC;
-$color-secondary-4: #F9CFF2;
-$color-secondary-5: #EFE9E7;
+$color-secondary-0: #ffc1cf;
+$color-secondary-1: #e8ffb7;
+$color-secondary-2: #e2a0ff;
+$color-secondary-3: #c5f5fc;
+$color-secondary-4: #f9cff2;
+$color-secondary-5: #efe9e7;
 
 /* GLOBAL */
 *,
@@ -29,5 +29,56 @@ $color-secondary-5: #EFE9E7;
   box-sizing: border-box;
   font-size: 16px;
   font-family: $poppins;
-  background: $color-primary-0;
+  // background: $color-primary-0;
+  color: $color-primary-1;
+}
+
+/* HEADER */
+header {
+  background-image: url("/images/pexels-taryn-elliott-7688356.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero {
+  padding: 2% 4%;
+  display: flex;
+  justify-content: space-between;
+  // height: 100vh;
+}
+
+.hero__logo {
+  display: block;
+  // max-width: 10%;
+}
+
+.hero__logo__image {
+  background-color: #fff;
+}
+
+.hero__logo__content {
+  color: #963455;
+  // line-height: 16px;
+}
+
+.hero__menu__list {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  width: 100%;
+  list-style: none;
+  display: flex;
+
+  li {
+    display: inline-block;
+    padding: 0 6%;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }

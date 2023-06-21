@@ -8,5 +8,50 @@
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  background: #DE96AE;
+  color: #f6e2e9;
+}
+
+/* HEADER */
+header {
+  background-image: url("/images/pexels-taryn-elliott-7688356.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero {
+  padding: 2% 4%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__logo {
+  display: block;
+}
+
+.hero__logo__image {
+  background-color: #fff;
+}
+
+.hero__logo__content {
+  color: #963455;
+}
+
+.hero__menu__list {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  float: left;
+  width: 100%;
+  list-style: none;
+  display: flex;
+}
+.hero__menu__list li {
+  display: inline-block;
+  padding: 0 6%;
+  align-items: center;
+}
+.hero__menu__list a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
