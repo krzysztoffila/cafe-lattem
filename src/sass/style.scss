@@ -29,13 +29,11 @@ $color-secondary-5: #efe9e7;
   box-sizing: border-box;
   font-size: 16px;
   font-family: $poppins;
-  // background: $color-primary-0;
-  color: $color-primary-1;
 }
 
 /* HEADER */
 header {
-  background-image: url("/images/pexels-taryn-elliott-7688356.jpg");
+  background-image: url("/images/garden.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -44,27 +42,35 @@ header {
 
 .hero {
   padding: 2% 4%;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   // height: 100vh;
 }
 
-.hero__logo {
-  display: block;
-  // max-width: 10%;
+.hero__container {
+  width: 80%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.hero__logo__image {
-  background-color: #fff;
-}
+// .hero__logo {
+//   display: inline-block;
+//   line-height: 2em;
+// }
+
+// .hero__logo__image {
+//   background-color: #fff;
+// }
 
 .hero__logo__content {
   color: #963455;
-  // line-height: 16px;
+  font-family: $satisfy;
+  font-size: 2em;
 }
 
 .hero__menu__list {
-  width: 50%;
   display: flex;
   justify-content: space-between;
   float: left;
@@ -80,5 +86,12 @@ header {
 
   a {
     text-decoration: none;
+    color: $color-primary-4;
+    font-size: 1.5em;
+
+    &:hover {
+      color: $color-primary-3;
+      transition: 0.3s;
+    }
   }
 }
