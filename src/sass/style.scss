@@ -33,38 +33,46 @@ $color-secondary-5: #efe9e7;
 
 /* HEADER */
 header {
-  background-image: url("/images/garden.jpg");
+  background-image: url("/src/images/garden.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
 
+.container__row {
+  display: flex;
+}
+
 .hero {
   padding: 2% 4%;
-  // display: flex;
-  // justify-content: space-between;
-  // height: 100vh;
+  // position: relative;
 }
 
 .hero__container {
   width: 80%;
   max-width: 1240px;
   margin: 0 auto;
-  display: flex;
   justify-content: space-between;
 }
 
-// .hero__logo {
-//   display: inline-block;
-//   line-height: 2em;
-// }
+.hero__text {
+  width: 60%;
+  padding: 10% 0;
+}
 
-// .hero__logo__image {
-//   background-color: #fff;
-// }
+span .hero__logo__cafe {
+  font-size: 3em;
+}
 
-.hero__logo__content {
+.hero__text h1 {
+  font-size: 3em;
+  padding: 3%;
+  margin: 0 auto;
+  color: $color-primary-4;
+}
+
+.hero__logo__cafe {
   color: #963455;
   font-family: $satisfy;
   font-size: 2em;
