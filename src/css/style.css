@@ -10,6 +10,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+h2 {
+  text-align: center;
+  font-size: 2em;
+  padding: 2%;
+}
+
 /* HEADER */
 header {
   background-image: url("/src/images/garden.jpg");
@@ -97,4 +103,41 @@ span .hero__logo__cafe {
 }
 .hero__btn:hover, .hero__btn:focus {
   opacity: 0.75;
+}
+
+/* ABOUT */
+.offer {
+  padding: 2%;
+}
+
+.offer__col {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 3% 5%;
+  margin: 0 5%;
+  width: 33%;
+}
+
+.offer__image {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* MEDIA */
+@media only screen and (max-width: 768px) {
+  .hidden {
+    visibility: hidden;
+  }
+  .offer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2%;
+  }
 }/*# sourceMappingURL=style.css.map */
