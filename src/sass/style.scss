@@ -59,6 +59,7 @@ header {
 .hero__text {
   width: 60%;
   padding: 10% 0;
+  color: $color-primary-4;
 }
 
 span .hero__logo__cafe {
@@ -66,14 +67,19 @@ span .hero__logo__cafe {
 }
 
 .hero__text h1 {
-  font-size: 3em;
-  padding: 3%;
-  margin: 0 auto;
-  color: $color-primary-4;
+  font-size: 4em;
+  font-weight: 300;
+  padding-bottom: 2%;
+}
+
+.hero__text p {
+  font-size: 1.2em;
+  font-weight: 200;
+  padding-bottom: 2%;
 }
 
 .hero__logo__cafe {
-  color: #963455;
+  color: $color-primary-4;
   font-family: $satisfy;
   font-size: 2em;
 }
@@ -101,5 +107,21 @@ span .hero__logo__cafe {
       color: $color-primary-3;
       transition: 0.3s;
     }
+  }
+}
+
+.hero__btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-primary-1;
+  font-weight: 900;
+  background-color: $color-primary-4;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.75;
   }
 }
