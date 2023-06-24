@@ -29,17 +29,15 @@ $color-secondary-5: #efe9e7;
   box-sizing: border-box;
   font-size: 16px;
   font-family: $poppins;
+  color: $color-primary-4;
 }
 
-h2 {
-  text-align: center;
-  font-size: 2em;
-  padding: 2%;
-}
+
+
 
 /* HEADER */
 header {
-  background-image: url("/src/images/garden.jpg");
+  background-image: url("/images/barista.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -64,7 +62,7 @@ header {
 .hero__text {
   width: 60%;
   padding: 10% 0;
-  color: $color-primary-4;
+  color: $color-primary-1;
 }
 
 span .hero__logo__cafe {
@@ -75,16 +73,17 @@ span .hero__logo__cafe {
   font-size: 4em;
   font-weight: 300;
   padding-bottom: 2%;
+  color: $color-secondary-5;
 }
 
 .hero__text p {
   font-size: 1.2em;
   font-weight: 200;
   padding-bottom: 2%;
+  color: $color-secondary-5;
 }
 
 .hero__logo__cafe {
-  color: $color-primary-4;
   font-family: $satisfy;
   font-size: 2em;
 }
@@ -95,7 +94,6 @@ span .hero__logo__cafe {
   float: left;
   width: 100%;
   list-style: none;
-  display: flex;
 
   li {
     display: inline-block;
@@ -109,7 +107,7 @@ span .hero__logo__cafe {
     font-size: 1.5em;
 
     &:hover {
-      color: $color-primary-3;
+      color: $color-primary-1;
       transition: 0.3s;
     }
   }
@@ -124,26 +122,52 @@ span .hero__logo__cafe {
   background-color: $color-primary-4;
   padding: 0.75em 2em;
   border-radius: 100px;
-
-  &:hover,
-  &:focus {
-    opacity: 0.75;
-  }
 }
 
 /* ABOUT */
+div.offer {
+  /* Image */
+  background-image: url("/images/clouds-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
 .offer {
   // justify-content: space-around;
   padding: 2%;
 }
 
+.offer__header {
+  text-align: center;
+  font-size: 2em;
+  padding: 2%;
+}
+
+.offer__container {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.offer__info {
+  font-size: 1.2em;
+}
+
 .offer__col {
-  border: 1px solid black;
+  border: 1px solid $color-primary-4;
   border-radius: 10px;
   text-align: center;
   padding: 3% 5%;
   margin: 0 5%;
   width: 33%;
+  overflow: hidden;
+}
+
+.offer__promo {
+  font-size: 1.2em;
+  padding-bottom: 30%;
 }
 
 .offer__image {
@@ -151,7 +175,10 @@ span .hero__logo__cafe {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  transition-duration: 3s;
+  margin: 0 auto;
 }
+
 
 /* MEDIA */
 @media only screen and (max-width: 768px) {
@@ -165,7 +192,8 @@ span .hero__logo__cafe {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 40px;
     width: 100%;
-    padding: 2%;
+    padding: 5%;
   }
 }
