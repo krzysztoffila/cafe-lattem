@@ -1,10 +1,8 @@
 /* VARIABLES */
 
 //Fonts
-$poppins: "Poppins",
-sans-serif;
-$satisfy: "Satisfy",
-cursive;
+$poppins: "Poppins";
+$satisfy: "Satisfy";
 
 //Colors
 // http://paletton.com/#uid=15n0u0kapvz2IRN6aGLfkqAkQli
@@ -32,84 +30,56 @@ $color-secondary-5: #efe9e7;
   color: $color-primary-4;
 }
 
-
-
-
 /* HEADER */
 header {
   background-image: url("/images/barista.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
 }
 
-.container__row {
-  display: flex;
-}
-
-.hero {
-  padding: 2% 4%;
-}
-
-.hero__container {
+.container {
   width: 80%;
   max-width: 1240px;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
-.hero__text {
-  width: 60%;
-  padding: 10% 0;
-  color: $color-primary-1;
+.hero__logo__cafe {
+  font-family: $satisfy;
+  font-size: 1.2em;
 }
 
 span .hero__logo__cafe {
   font-size: 3em;
 }
 
-.hero__text h1 {
-  font-size: 4em;
-  font-weight: 300;
-  padding-bottom: 2%;
-  color: $color-secondary-5;
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+
+  p {
+    margin-bottom: 3em;
+  }
 }
 
-.hero__text p {
-  font-size: 1.2em;
-  font-weight: 200;
-  padding-bottom: 2%;
-  color: $color-secondary-5;
-}
+.hero__text {
+  width: 60%;
+  padding: 10% 0;
+  color: $color-primary-1;
 
-.hero__logo__cafe {
-  font-family: $satisfy;
-  font-size: 2em;
-}
-
-.hero__menu__list {
-  display: flex;
-  justify-content: space-between;
-  float: left;
-  width: 100%;
-  list-style: none;
-
-  li {
-    display: inline-block;
-    padding: 0 6%;
-    align-items: center;
+  h1 {
+    font-size: 4em;
+    font-weight: 300;
+    padding-bottom: 2%;
+    color: $color-secondary-5;
   }
 
-  a {
-    text-decoration: none;
-    color: $color-primary-4;
-    font-size: 1.5em;
-
-    &:hover {
-      color: $color-primary-1;
-      transition: 0.3s;
-    }
+  p {
+    font-size: 1.2em;
+    font-weight: 200;
+    padding-bottom: 2%;
+    color: $color-secondary-5;
   }
 }
 
@@ -122,78 +92,4 @@ span .hero__logo__cafe {
   background-color: $color-primary-4;
   padding: 0.75em 2em;
   border-radius: 100px;
-}
-
-/* ABOUT */
-div.offer {
-  /* Image */
-  background-image: url("/images/clouds-background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
-.offer {
-  // justify-content: space-around;
-  padding: 2%;
-}
-
-.offer__header {
-  text-align: center;
-  font-size: 2em;
-  padding: 2%;
-}
-
-.offer__container {
-  max-width: 80%;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.offer__info {
-  font-size: 1.2em;
-}
-
-.offer__col {
-  border: 1px solid $color-primary-4;
-  border-radius: 10px;
-  text-align: center;
-  padding: 3% 5%;
-  margin: 0 5%;
-  width: 33%;
-  overflow: hidden;
-}
-
-.offer__promo {
-  font-size: 1.2em;
-  padding-bottom: 30%;
-}
-
-.offer__image {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition-duration: 3s;
-  margin: 0 auto;
-}
-
-
-/* MEDIA */
-@media only screen and (max-width: 768px) {
-  .hidden {
-    visibility: hidden;
-  }
-
-  .offer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    width: 100%;
-    padding: 5%;
-  }
 }
