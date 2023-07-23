@@ -29,6 +29,50 @@ $color-secondary-5: #efe9e7;
   color: $color-primary-4;
 }
 
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4em;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  line-height: 1em;
+}
+
+/* Kazdy .nav__item ktory ma przed sobą .nav__item */
+.nav__item+.nav__item {
+  margin-left: 1em;
+}
+
+nav .hero__logo__cafe {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.nav__link--button {
+  background-color: #fff;
+  color: $color-primary-4;
+  padding: .25em 1em;
+  border-radius: 10em;
+}
+
+
 /* HEADER */
 header {
   background-image: url("/images/barista.jpg");
@@ -45,10 +89,6 @@ header {
 
 .hero__logo__cafe {
   font-family: $satisfy;
-  font-size: 1.2rem;
-}
-
-.hero__logo__cafe {
   font-size: 5.5rem;
 }
 
