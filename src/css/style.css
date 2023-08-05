@@ -59,6 +59,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 100vh;
 }
 
 .container {
@@ -97,6 +98,7 @@ header {
   font-weight: 200;
   padding-bottom: 2%;
   color: #efe9e7;
+  font-style: italic;
 }
 
 .hero__btn {
@@ -110,29 +112,54 @@ header {
   border-radius: 100px;
 }
 
-/* MAIN */
-.section-header {
+/* SECTION ABOUT */
+.section__about-text {
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 2em;
+}
+
+/* SECTION NEWS */
+.section__header {
   font-size: 2rem;
   text-align: center;
   margin: 3em 0;
 }
 
-.main {
+.primary__content__left,
+.primary__content__right {
   display: flex;
   justify-content: space-between;
 }
 
-.primary-content {
-  padding: 2em;
-  text-align: center;
-  align-items: center;
-  border: 1px solid #963455;
-  border-radius: 20px;
-  min-height: 20em;
+.primary__content__left-image,
+.primary__content__right-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  max-height: 480px;
+  width: 50%;
 }
 
-.primary-content-image {
-  width: 100%;
-  min-height: 250px;
-  border: 1px solid black;
+.primary__content__left-text,
+.primary__content__right-text {
+  width: 50%;
+  text-align: center;
+  margin: auto auto;
+  font-style: italic;
+}
+.primary__content__left-text h2,
+.primary__content__right-text h2 {
+  padding-bottom: 1em;
+  font-size: 2em;
+  font-family: "Satisfy";
+}
+.primary__content__left-text p,
+.primary__content__right-text p {
+  letter-spacing: 1px;
+  padding: 0 2em;
+  font-size: 1.2em;
 }/*# sourceMappingURL=style.css.map */
