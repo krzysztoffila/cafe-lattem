@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cafe Latte-m</title>
+  <title>Cafe Latte(m)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,16 +16,16 @@
 <body>
   <header class="hero">
     <nav class="nav">
-      <a href="#" class="hero__logo__cafe">Caffe Lattem</a>
+      <a href="#" class="hero__logo__cafe">Caffe Latte(m)</a>
       <ul class="nav__list">
         <li class="nav__item"><a href="#about" class="nav__link">O nas</a></li>
         <li class="nav__item"><a href="#news" class="nav__link">Co nowego</a></li>
-        <li class="nav__item"><a href="#" class="nav__link nav__link--button">Lokale</a></li>
+        <li class="nav__item"><a href="#locals" class="nav__link nav__link--button">Lokale</a></li>
       </ul>
     </nav>
     <div class="container row">
       <div class="hero__text">
-        <h1>Witamy w <span class="hero__logo__cafe">Cafe Lattem</span></h1>
+        <h1>Witamy w <span class="hero__logo__cafe">Cafe Latte(m)</span></h1>
         <p>Oazie przyjemności i rozkoszy, gdzie zmysły budzą się do życia w pełnym blasku słońca! Pragniemy serdecznie
           zaprosić Cię do naszej kawiarni, gdzie każdego dnia tworzymy niepowtarzalną atmosferę, która wypełnia Twoje
           ciało i duszę energią.</p>
@@ -33,9 +33,9 @@
       </div>
     </div>
   </header>
-  <section>
+  <section class="section__about" id="about">
     <div class="container row">
-      <h2 class="section__header" id="about">O nas:</h2>
+      <h2 class="section__header">O nas:</h2>
       <p class="section__about-text">Cafe Latem to miejsce, w którym poranki nabierają nowego znaczenia. Wyobraź sobie
         wypicie pierwszej kawy o
         poranku na naszym urokliwym tarasie, gdzie słoneczne promienie rozświetlają Twoje oczy, a aromatyczna kawa
@@ -47,7 +47,7 @@
         doskonałości sprawia, że każdy napój jest mistrzowsko przygotowany.</p>
     </div>
   </section>
-  <section>
+  <section class="section__news">
     <h2 class="section__header" id="news">Co nowego:</h2>
     <section class="container row">
       <article class="primary__content__left">
@@ -82,6 +82,27 @@
       </article>
     </section>
   </section>
+  <section id="locals" class="container row">
+    <h2 class="section__header">Lokale</h2>
+    <div class="locals__content">
+      <article class="locals__content__box">
+        <h3>Warszawa</h3>
+        <img class="locals__content-image" src="./images/restaurant-inside.jpg">
+        <p>Adres:</p>
+      </article>
+      <article class="locals__content__box">
+        <h3>Wrocław</h3>
+        <img class="locals__content-image" src="./images/garden.jpg">
+        <p>Adres:</p>
+      </article>
+      <article class="locals__content__box">
+        <h3>Poznań</h3>
+        <img class="locals__content-image" src="./images/restaurant-inside-two.jpg">
+        <p>Adres:</p>
+      </article>
+    </div>
+  </section>
+  <footer>© 2023 - Cafe Lattem - by Krzysztof Fila</footer>
 </body>
 
 </html>

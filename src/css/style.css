@@ -11,6 +11,13 @@
   color: #963455;
 }
 
+.section__header {
+  font-size: 2rem;
+  text-align: center;
+  justify-content: center;
+  padding: 3em 0;
+}
+
 /* NAVIGATION */
 nav {
   display: flex;
@@ -122,12 +129,6 @@ header {
 }
 
 /* SECTION NEWS */
-.section__header {
-  font-size: 2rem;
-  text-align: center;
-  margin: 3em 0;
-}
-
 .primary__content__left,
 .primary__content__right {
   display: flex;
@@ -140,7 +141,7 @@ header {
   background-position: center;
   background-size: cover;
   object-fit: cover;
-  max-height: 480px;
+  max-height: 100%;
   width: 50%;
 }
 
@@ -162,4 +163,43 @@ header {
   letter-spacing: 1px;
   padding: 0 2em;
   font-size: 1.2em;
+}
+
+.section__about {
+  background-image: url("/images/clouds-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* SECTION LOCALS */
+.locals__content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5em;
+}
+.locals__content h3 {
+  padding-bottom: 2em;
+}
+
+.locals__content__box {
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+  align-items: center;
+  border: 1px solid #963455;
+  border-radius: 20px;
+  min-height: 20em;
+  max-width: 30%;
+}
+
+.locals__content-image {
+  width: 100%;
+  height: 80%;
+  border-radius: 2%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
